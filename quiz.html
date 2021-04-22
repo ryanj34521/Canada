@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Canada | Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(init);
+        function init(){
+            $("#doIt").click(createMadLib);
+        }
+
+        function createMadLib(){
+            var adjective1;
+            var adjective2;
+            var animal;
+
+            adjective1 = prompt("Enter an adjective");
+            adjective2 = prompt("Enter an adjective");
+            animal = prompt("Enter an animal");
+
+            $(".handwritten").css("font-size","40px");
+            var story = "The " + adjective1 + " man rode a " + adjective2 + " " + animal + " into town.";
+            var paraElement = $("#storyText")
+            paraElement.html(story)
+        }
+
+
+    </script>
+</head>
+<body>
+<h1>
+    Canada
+</h1>
+<h2>
+    Quiz
+</h2>
+<div class="vertical-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+    <a href="quiz.html">Quiz</a>
+</div>
+<h3>
+    Once upon a time
+</h3>
+<p id="storyText" class="handwritten">
+    We want out story to be printed here
+</p>
+<button id="doIt">
+    Quiz Time!
+</button>
+
+
+</body>
+</html>
