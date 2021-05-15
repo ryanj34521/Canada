@@ -20,12 +20,16 @@
     color: white;
 }
 
+/*body{*/
+/*    background-image: url('Flag_of_Canada.svg');*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*}*/
 body{
-    background-image: url('Flag_of_Canada.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: lightblue;
 }
+
 h1{
     text-align: Center;
     color: beige;
@@ -34,14 +38,11 @@ h1{
 }
 h2{
     text-align: center;
-    color: powderblue;
+    color: white;
+    -webkit-text-stroke: 1px black;
 }
 button{
     background-color: red;
-}
-
-#map{
-    float: right;
 }
 #floatRight{
     float: right;
@@ -50,6 +51,11 @@ button{
 #floatLeft{
     float: left;
 }
-p{
-
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #ffffff;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
 }
